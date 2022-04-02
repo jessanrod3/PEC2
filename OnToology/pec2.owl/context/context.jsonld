@@ -1,0 +1,151 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "Creator" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator"
+    },
+    "numberOfEpisodes" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "BestComedySeriesAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward"
+    },
+    "MainCharacter" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter"
+    },
+    "Woman" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"
+    },
+    "hasBeenWonBy" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy",
+      "@type" : "@id"
+    },
+    "interpretsThemselves" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "GuestCharacter" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "ActingAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward"
+    },
+    "BestSupportingActressAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "SeriesAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward"
+    },
+    "hasWorkedIn" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director"
+    },
+    "sings" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "BestSupportingActorAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward"
+    },
+    "hasWon" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"
+    },
+    "soundtrackSong" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Man" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"
+    },
+    "BestMainActressAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"
+    },
+    "Winner" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasWorker" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker",
+      "@type" : "@id"
+    },
+    "appearsIn" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "SeriesThing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#SeriesThing"
+    },
+    "interprets" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets",
+      "@type" : "@id"
+    },
+    "BestMainActorAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward"
+    },
+    "Singer" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer"
+    },
+    "terms" : {
+      "@id" : "http://purl.org/dc/elements/1.1/terms"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "RecurrentCharacter" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter"
+    },
+    "hasAward" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Song" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"
+    }
+  }
+}
