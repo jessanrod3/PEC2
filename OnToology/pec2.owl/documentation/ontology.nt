@@ -1,0 +1,695 @@
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series/1.0.0> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series> <http://purl.org/dc/terms/license> "1.0.0"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series> <http://www.w3.org/2000/01/rdf-schema#comment> "Paquita Salas Ontology\nCreated by Jesús Sánchez Rodríguez"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/terms
+<http://purl.org/dc/elements/1.1/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/license
+<http://schema.org/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes an object property between a character and a season"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.w3.org/2000/01/rdf-schema#label> "appearsIn"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> <http://www.w3.org/2000/01/rdf-schema#label> "WonBy"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes an object property between a winner and its won award"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.w3.org/2000/01/rdf-schema#label> "hasWon"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn> <http://www.w3.org/2000/01/rdf-schema#label> "hasWorkedIn"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker> <http://www.w3.org/2000/01/rdf-schema#label> "hasWorkers"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes an object property between an actor and a character"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.w3.org/2000/01/rdf-schema#label> "interprets"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes an object property between a singer and a song sung by"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.w3.org/2000/01/rdf-schema#label> "sings"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward> <http://www.w3.org/2000/01/rdf-schema#label> "hasAward" .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of episodes of a season"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/numberOfEpisodes" .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Awards related to actors"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> <http://www.w3.org/2000/01/rdf-schema#label> "ActingAward"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "This classe represents an actor or actress" .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Actor"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> <http://www.w3.org/2000/01/rdf-schema#comment> "Awards won (or nominated to) by a person or series"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> <http://www.w3.org/2000/01/rdf-schema#label> "Award"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Award"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to the best comedy series"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to the best main male actor"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to the best main female actor"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to the best supporting actor"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to the best supporting actress"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a character in the series"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/FictionalCharacter"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a series creator" .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a series director" .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a guest character"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "GuestCharacter"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the main character(s)"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "MainCharacter"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a male human"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/2000/01/rdf-schema#label> "Man"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Man"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a real person" .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Person"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents current characters"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "RecurrentCharacter"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a series' season"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the serie"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/TelevisionShow"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> .
+_:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Award related to a series"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward> <http://www.w3.org/2000/01/rdf-schema#label> "SeriesAward"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> <http://www.w3.org/2000/01/rdf-schema#comment> "individual who sings a song"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> <http://www.w3.org/2000/01/rdf-schema#label> "Singer"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Singer" .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> <http://www.w3.org/2000/01/rdf-schema#comment> "Songs in the series"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> <http://www.w3.org/2000/01/rdf-schema#label> "Song"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Song" .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#SeriesThing> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual who has won an award"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner> <http://www.w3.org/2000/01/rdf-schema#label> "Winner"@en .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a female human"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> <http://www.w3.org/2000/01/rdf-schema#label> "Woman"@en .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Woman"@en .
+# 
+# http://www.w3.org/2002/07/owl#SeriesThing
+<http://www.w3.org/2002/07/owl#SeriesThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#SeriesThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Main class"@en .
+<http://www.w3.org/2002/07/owl#SeriesThing> <http://www.w3.org/2000/01/rdf-schema#label> "SeriesThing"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2019
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2020
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2019
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2020
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas> <http://www.w3.org/2000/01/rdf-schema#label> "Serie Paquita Salas"@es .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> .
+# 
+# http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "if a character appears in more than 12 episodes, it's a main character"@en .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#arguments> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#y> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/2000/01/rdf-schema#comment> "if a character appears in between 5  and 12 episodes, it's a recurrent character"@en .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid28 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#arguments> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#y> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#arguments> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#y> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "if a character appears in less than 5 episodes, it's a guest"@en .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#arguments> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#y> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid49 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid51 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid53 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid54 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid54 <http://www.w3.org/2000/01/rdf-schema#label> "S4" .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid54 <http://www.w3.org/2003/11/swrl#body> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid58 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://www.w3.org/2003/11/swrl#head> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid62 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "If an actor interprets a character and the character appears in a season, then the actor appears in the season"@en .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid6 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z> .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid8 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid12 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
