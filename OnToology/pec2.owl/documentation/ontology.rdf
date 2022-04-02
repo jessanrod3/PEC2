@@ -1,0 +1,1284 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#"
+     xml:base="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Series="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series/1.0.0"/>
+        <terms:license xml:lang="en">1.0.0</terms:license>
+        <rdfs:comment xml:lang="en">Paquita Salas Ontology
+Created by Jesús Sánchez Rodríguez</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/terms -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/terms"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+        <rdfs:comment xml:lang="en">Describes an object property between a character and a season</rdfs:comment>
+        <rdfs:label xml:lang="en">appearsIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner"/>
+        <rdfs:label xml:lang="en">WonBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"/>
+        <rdfs:comment xml:lang="en">Describes an object property between a winner and its won award</rdfs:comment>
+        <rdfs:label xml:lang="en">hasWon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+        <rdfs:label xml:lang="en">hasWorkedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdfs:label xml:lang="en">hasWorkers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdfs:comment xml:lang="en">Describes an object property between an actor and a character</rdfs:comment>
+        <rdfs:label xml:lang="en">interprets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"/>
+        <rdfs:comment xml:lang="en">Describes an object property between a singer and a song sung by</rdfs:comment>
+        <rdfs:label xml:lang="en">sings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>hasAward</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interpretsThemselves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Number of episodes of a season</rdfs:comment>
+        <rdfs:sameAs>http://dbpedia.org/ontology/numberOfEpisodes</rdfs:sameAs>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward"/>
+        <rdfs:comment xml:lang="en">Awards related to actors</rdfs:comment>
+        <rdfs:label xml:lang="en">ActingAward</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <rdfs:comment>This classe represents an actor or actress</rdfs:comment>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/Actor</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">Awards won (or nominated to) by a person or series</rdfs:comment>
+        <rdfs:label xml:lang="en">Award</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/Award</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward"/>
+        <rdfs:comment xml:lang="en">Award related to the best comedy series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward"/>
+        <rdfs:comment xml:lang="en">Award related to the best main male actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActressAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward"/>
+        <rdfs:comment xml:lang="en">Award related to the best main female actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActorAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward"/>
+        <rdfs:comment xml:lang="en">Award related to the best supporting actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#ActingAward"/>
+        <rdfs:comment xml:lang="en">Award related to the best supporting actress</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">This class represents a character in the series</rdfs:comment>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/FictionalCharacter</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <rdfs:comment>This class represents a series creator</rdfs:comment>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <rdfs:comment>This class represents a series director</rdfs:comment>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdfs:comment xml:lang="en">This class represents a guest character</rdfs:comment>
+        <rdfs:label xml:lang="en">GuestCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdfs:comment xml:lang="en">This class represents the main character(s)</rdfs:comment>
+        <rdfs:label xml:lang="en">MainCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <rdfs:comment xml:lang="en">This class represents a male human</rdfs:comment>
+        <rdfs:label xml:lang="en">Man</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/Man</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment>This class represents a real person</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/Person</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdfs:comment xml:lang="en">This class represents current characters</rdfs:comment>
+        <rdfs:label xml:lang="en">RecurrentCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">This class represents a series&apos; season</rdfs:comment>
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">This class denotes the serie</rdfs:comment>
+        <rdfs:label xml:lang="en">Series</rdfs:label>
+        <rdfs:sameAs xml:lang="en">http://dbpedia.org/ontology/TelevisionShow</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#SeriesAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasBeenWonBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Award related to a series</rdfs:comment>
+        <rdfs:label xml:lang="en">SeriesAward</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">individual who sings a song</rdfs:comment>
+        <rdfs:label xml:lang="en">Singer</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Singer</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:comment xml:lang="en">Songs in the series</rdfs:comment>
+        <rdfs:label xml:lang="en">Song</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Song</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Winner">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SeriesThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Award"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Individual who has won an award</rdfs:comment>
+        <rdfs:label xml:lang="en">Winner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+        <rdfs:comment xml:lang="en">This class represents a female human</rdfs:comment>
+        <rdfs:label xml:lang="en">Woman</rdfs:label>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/Woman</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#SeriesThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#SeriesThing">
+        <rdfs:comment xml:lang="en">Main class</rdfs:comment>
+        <rdfs:label xml:lang="en">SeriesThing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Anna_Castillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belinda_Washington"/>
+        <numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</numberOfEpisodes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_Cuesta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Belén_de_Lucas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1"/>
+        <numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</numberOfEpisodes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestComedySeriesAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2019 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2020 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestMainActorAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2019 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2020 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Supporting_Actrees_Award_2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#BestSupportingActressAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Brays_Efe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Main_Actor_2017"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Lidia_San_José"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Magüi_Moreno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1"/>
+        <numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</numberOfEpisodes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona_Terés">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Mariona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <sings rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos"/>
+        <numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</numberOfEpisodes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#PaquitaSalas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Series"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2017"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2019"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Best_Comedy_Series_2020"/>
+        <rdfs:label xml:lang="es">Serie Paquita Salas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Paquita_Salas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3"/>
+        <numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</numberOfEpisodes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Rosalía">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <sings rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Sergio_Dalma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Singer"/>
+        <sings rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Terelu_Campos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Bárbara_Valiente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Yolanda_Ramos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Woman"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Noemí_Argüelles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Man"/>
+        <interprets rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Álex_de_Lucas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#5_deditos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita! -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#¡Ay,_Paquita!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">if a character appears in more than 12 episodes, it&apos;s a main character</rdfs:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#MainCharacter"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">if a character appears in between 5  and 12 episodes, it&apos;s a recurrent character</rdfs:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#RecurrentCharacter"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">if a character appears in less than 5 episodes, it&apos;s a guest</rdfs:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#numberOfEpisodes"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#GuestCharacter"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Song"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#sings"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#soundtrackSong"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">If an actor interprets a character and the character appears in a season, then the actor appears in the season</rdfs:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Actor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Character"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#interprets"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#appearsIn"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
