@@ -132,7 +132,6 @@ Created by Jesús Sánchez Rodríguez</rdfs:comment>
     <!-- http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorkedIn">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#hasWorker"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jessanrod3/ontologies/2022/2/Series#Season"/>
         <rdfs:label xml:lang="en">hasWorkedIn</rdfs:label>
